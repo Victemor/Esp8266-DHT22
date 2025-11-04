@@ -14,6 +14,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const channelId = 3145537; // Tu canal de ThingSpeak
+  const readAPIKey = "JB38PVPETXKWEJF3"; // Tu API Key de lectura
   const url = `https://api.thingspeak.com/channels/${channelId}/feeds.json?results=20`;
 
   useEffect(() => {
